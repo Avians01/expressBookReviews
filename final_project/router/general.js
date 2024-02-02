@@ -4,6 +4,9 @@ let isValid = require("./auth_users.js").isValid;
 let users = require("./auth_users.js").users;
 const public_users = express.Router();
 
+// ... (Your existing code for route handlers)
+
+module.exports = public_users;
 
 public_users.post("/register", (req,res) => {
   //Write your code here
