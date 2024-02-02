@@ -7,6 +7,12 @@ const public_users = express.Router();
 // ... (Your existing code for route handlers)
 
 module.exports = public_users;
+public_users.get('/', function (req, res) {
+  // Complete the code for getting the list of books available in the shop
+  const allBooks = books; // Assuming 'books' is an array containing book information
+  return res.status(200).json(allBooks);
+});
+
 
 public_users.post("/register", (req,res) => {
   //Write your code here
